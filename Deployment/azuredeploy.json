@@ -151,7 +151,7 @@
         "gitRepoUrl": {
             "type": "string",
             "minLength": 1,
-            "defaultValue": "https://github.com/OfficeDev/microsoft-teams-icebreaker-app.git",
+            "defaultValue": "https://github.com/sergiorru/microsoft-teams-icebreaker-app.git",
             "metadata": {
               "description": "The URL to the GitHub repository to deploy."
             }
@@ -170,8 +170,8 @@
         "botDisplayName": "[parameters('appName')]",
         "botUniqueName": "[concat(variables('baseResourceName'), '-', uniqueString(resourceGroup().id))]",
         "appServiceName": "[concat(variables('baseResourceName'), '-', uniqueString(resourceGroup().id))]",
-        "cosmosDbName":"[concat(variables('baseResourceName'), '-storage-', uniqueString(resourceGroup().id))]",
-        "logicAppName":"[concat(variables('baseResourceName'), '-logicapp-', uniqueString(resourceGroup().id))]",
+        "cosmosDbName":"[concat(variables('baseResourceName'), '-', uniqueString(resourceGroup().id))]",
+        "logicAppName":"[concat(variables('baseResourceName'), '-', uniqueString(resourceGroup().id))]",
         "appInsightsName": "[variables('baseResourceName')]",
         "appHostingPlanName": "[variables('baseResourceName')]",
         "sharedSkus": [ "Free", "Shared" ],
